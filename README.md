@@ -10,9 +10,9 @@ Hit branch [master](https://github.com/billryan/resume/tree/master) if you wanna
 
 - [zachscrivena/simple-resume-cv](https://github.com/zachscrivena/simple-resume-cv)
 - [res](https://www.ctan.org/pkg/res)
-- [JianXu's CV](http://www.jianxu.net/en/files/JianXu_CV.pdf)
+- [JianXu&#39;s CV](http://www.jianxu.net/en/files/JianXu_CV.pdf)
 - [Web Front-End Wenli Zhang.pdf](http://zhangwenli.com/cv/Web%20Front-End%20Wenli%20Zhang.pdf)
-- [paciorek's CV/Resume template](http://www.stat.berkeley.edu/~paciorek/computingTips/Latex_template_creating_CV_.html)
+- [paciorek&#39;s CV/Resume template](http://www.stat.berkeley.edu/~paciorek/computingTips/Latex_template_creating_CV_.html)
 - [How to write a LaTeX class file and design your own CV (Part 1) - ShareLaTeX](https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html)
 
 其中最后一条 shareLaTeX 的总结清晰易懂，强烈建议围观。接下来介绍模板使用细节和定制说明。
@@ -27,13 +27,6 @@ Hit branch [master](https://github.com/billryan/resume/tree/master) if you wanna
 - 完善的 Unicode 字体支持，因为用的是 XeLaTeX 嘛
 - 完美的简体中文支持，默认使用 adobefonts 的四套简体中文字型，其他字型可自行添加。
 - 支持图标字体 FontAwesome 4.6.3
-
-### 样例输出
-
-![English](https://user-images.githubusercontent.com/1292567/62409353-3fecfc00-b608-11e9-8e83-84962912c956.png)
-![English with photo](https://user-images.githubusercontent.com/1292567/62409351-3f546580-b608-11e9-9f6d-d232a68c5451.png)
-![简体中文](https://user-images.githubusercontent.com/1292567/62409352-3fecfc00-b608-11e9-8d9e-76243ca3052a.png)
-
 - [英文 PDF](https://github.com/billryan/resume/files/3463503/resume.pdf)
 - [加入照片的英文 PDF](https://github.com/billryan/resume/files/3463501/resume_photo.pdf)
 - [简体中文 PDF](https://github.com/billryan/resume/files/3463502/resume-zh_CN.pdf)
@@ -53,7 +46,7 @@ Hit branch [master](https://github.com/billryan/resume/tree/master) if you wanna
 
 ### 使用较新的 TeX 发行版在本地计算机编译
 
-除了在线编译外，该模板当然也支持传统的本地编译，从 <https://github.com/billryan/resume/tree/zh_CN> 上克隆下来使用 XeLaTeX 编译即可。
+除了在线编译外，该模板当然也支持传统的本地编译，从 [https://github.com/billryan/resume/tree/zh_CN](https://github.com/billryan/resume/tree/zh_CN) 上克隆下来使用 XeLaTeX 编译即可。
 
 ```tex
 xelatex resume.tex % 编译英文简历
@@ -67,16 +60,16 @@ xelatex resume-zh_CN.tex % 编译中文简历
 
 对 git 不了解或使用不方便的朋友可单独下载压缩包，解压即用。下载地址见 [GitHub 官网](https://github.com/billryan/resume/archive/zh_CN.zip), [大陆镜像加速](https://gods.coding.net/p/resume/git)
 
-对 git 比较了解的朋友可选择克隆后切换到`zh_CN`分支，`zh_CN` 是`master`分支的超集，即`zh_CN`包含`master`分支所有的文件。
-需要注意的是`zh_CN`分支包含 Adobe 的宋楷黑仿四套中文字体，体积较大(40 MB+)，如果只需要英文简历的可单独克隆`master`分支。
+对 git 比较了解的朋友可选择克隆后切换到 `zh_CN`分支，`zh_CN` 是 `master`分支的超集，即 `zh_CN`包含 `master`分支所有的文件。
+需要注意的是 `zh_CN`分支包含 Adobe 的宋楷黑仿四套中文字体，体积较大(40 MB+)，如果只需要英文简历的可单独克隆 `master`分支。
 
 中文使用UTF-8编码，对于大多数 Windows 用户来说，只要使用的不是太老的 CTeX 发行版，WinEdt 的中文支持也是毫无压力的。
 编译时务必使用 \XeLaTeX，其他编译方式会报错，因为依赖了 \XeTeX 的一些东西。
 
 ### 中英文切换
 
-英文模板范例见 <https://github.com/billryan/resume/blob/zh_CN/resume.tex> 
-中文模板范例见 <https://github.com/billryan/resume/blob/zh_CN/resume-zh_CN.tex>
+英文模板范例见 [https://github.com/billryan/resume/blob/zh_CN/resume.tex](https://github.com/billryan/resume/blob/zh_CN/resume.tex)
+中文模板范例见 [https://github.com/billryan/resume/blob/zh_CN/resume-zh_CN.tex](https://github.com/billryan/resume/blob/zh_CN/resume-zh_CN.tex)
 
 中文模板与英文模板的区别仅有两行——使用中文时仅需反注释以下两行，模板中已默认启用，第一次编译时耗时相对较长(引入了外部中文字型)，耐心等待下。
 
@@ -86,7 +79,7 @@ xelatex resume-zh_CN.tex % 编译中文简历
 \usepackage{linespacing_fix} % disable extra space before next section
 ```
 
-对于高级用户：如果系统已确定安装有 Adobe 的四套中文字型，在文档的开始处使用包`zh_CN-Adobefonts_internal`，这样第一次编译时也会很快。
+对于高级用户：如果系统已确定安装有 Adobe 的四套中文字型，在文档的开始处使用包 `zh_CN-Adobefonts_internal`，这样第一次编译时也会很快。
 
 ### 参考文献
 
@@ -104,7 +97,7 @@ xelatex myresume-zh_CN
 xelatex myresume-zh_CN
 ```
 
-范例文档中默认Reference 另起一页，想留在当前页的可注释掉`\newpage`
+范例文档中默认Reference 另起一页，想留在当前页的可注释掉 `\newpage`
 
 ### 宏
 
@@ -129,7 +122,7 @@ xelatex myresume-zh_CN
 
 ### 实践参考
 
-这里列举一下其他同学基于本模板的具体**实践心得**, 大家可以自行参考, 也欢迎<u>提交贡献</u>, 分享你的心得:
+这里列举一下其他同学基于本模板的具体**实践心得**, 大家可以自行参考, 也欢迎 `<u>`提交贡献 `</u>`, 分享你的心得:
 
 - [用 Tex 书写优雅的简历 – Jin’s Blog](https://www.imbajin.com/2018-01-20-%E4%BD%BF%E7%94%A8Tex%E4%B9%A6%E5%86%99%E4%BC%98%E9%9B%85%E7%9A%84%E7%AE%80%E5%8E%86/) (简单介绍tex + 常见样式调整)
 
