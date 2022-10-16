@@ -23,31 +23,35 @@
   % \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
   \section{\faGraduationCap\ 教育背景}
   \datedsubsection{\textbf{中国科学院大学},计算机软件与理论}{2021.9 - 预计2024.6毕业}
-  \textit{工学学术硕士在读(保研)}\\
-  \textbf{GPA} 3.5/4.0\space \space \textbf{排名} 4/63(前10\%)
+  \begin{itemize}
+    \item \textit{学术硕士在读(保研)}
+    \item \textbf{GPA} 3.5/4.0\space \space \textbf{排名} 4/63(前10\%)
+  \end{itemize}
   \datedsubsection{\textbf{河南科技大学},计算机科学与技术}{2017.9 - 2021.6}
-  \textit{工学本科}\\
-  \textbf{GPA} 4.0/5.0\space \space \textbf{排名} 3/144(前5\%)
+  \begin{itemize}
+    \item \textit{本科}
+    \item \textbf{GPA} 4.0/5.0\space \space \textbf{排名} 3/144(前10\%)
+  \end{itemize}
 
 \section{\faUsers\ 项目/实习经历}
 \datedsubsection{\textbf{上海哔哩哔哩科技有限公司}}{2022年6月 -- 2022年9月}
 \role{大数据平台实习生}{bilibili 数据平台部 Berserker}
-Berserker是提供数据的\textbf{存储、查询、数据开发、数据质量分析、分布式调度}的大数据平台。\\
+Berserker是提供数据的存储、查询、数据开发、数据质量分析、分布式调度的大数据平台。\\
 实习中负责工具侧\textbf{元数据、数据运营、数据管理}等业务方向，专注\textbf{元数据采集、治理工具}等功能的设计研发。
 \begin{itemize}
-  \item 设计了Hive MetaStore中\textbf{分区信息数据的解耦方案}。通过全量拷贝、Binlog增量变更、定期数据一致性检测同步的方法落入\textbf{TiDB数据库}的方案加速查询，优化了Hive表分区信息查询速度和离线任务调度侧资源消耗，\textbf{接口性能提升60\%}
-  \item 在部门降本增效计划中，参与了无效数据表集中下线的功能设计，通过\textbf{分布式定时调度框架Archer}设计实现了高效安全的数据表维护逻辑功能
-  \item 设计了覆盖全、数据准、粒度细的\textbf{表使用热度}功能服务，为后续做各类数据应用和数据治理提供支持。
+  \item 设计了Hive MetaStore中\textbf{分区信息数据的解耦方案}。通过\textbf{全量拷贝、Binlog增量变更、数据一致性检测、分布式调度同步}的方法落入\textbf{TiDB}的方案加速查询，优化了Hive表分区信息查询速度和资源占用，\textbf{接口性能提升60\%}
+  \item 在部门降本增效计划中，参与了无效数据表集中下线的功能设计，通过\textbf{分布式定时调度框架Archer}设计实现了高效的数据表安全删除逻辑功能
+  \item 设计了覆盖全、数据准、粒度细的\textbf{表使用热度}功能服务，为各类数据应用和数据治理提供支持。
   \item 涉及技术：Kafka、SpringBoot、Hive、TiDB、RocketMQ、ClickHouse、MySQL
 \end{itemize}
 
 \datedsubsection{\textbf{用于列车售票的可线性化并发数据结构}}{2021年9月 -- 2021年12月}
 \role{个人项目}{中国科学院大学《并发数据结构与多核编程》，林惠民院士}
 \begin{onehalfspacing}
-  使用Java语言设计并完成了一个\textbf{用于列车售票的可线性化并发数据结构}\\https://github.com/zkJames/TicketingSystem
+  使用Java语言设计并完成了一个\textbf{用于列车售票的可线性化并发数据结构}
 \begin{itemize}
-  \item 设计乘车区间\textbf{二进制编码运算}的算法，基于CAS原语实现\textbf{lock-free}级别的并发方案，性能上大幅度改进。并且设计采用可线性化验证工具对并发数据结构进行可线性化分析验证。
-  \item 利用性能评价指标，对算法性能进行评估，最终性能评测分数排名达到所有方案的\textbf{前5\%}
+  \item 设计乘车区间\textbf{二进制编码运算}的算法，基于\textbf{CAS原语}实现\textbf{lock-free}级别的并发方案，性能上大幅度改进。并且设计采用可线性化验证工具对并发数据结构进行可线性化分析验证。
+  \item 利用性能评价指标，对算法性能进行评估，最\textbf{终性能评测分数排名}达到所有方案的\textbf{前5\%}
   \item 涉及技术：Java、并发编程、lock-free
 \end{itemize}
 \end{onehalfspacing}
@@ -55,9 +59,9 @@ Berserker是提供数据的\textbf{存储、查询、数据开发、数据质量
 \datedsubsection{\textbf{中铁隧道局集团有限公司}}{2019 年9月 -- 2019 年 12 月}
 \role{移动端负责人}{中铁隧道局机况检测系统}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+移动端设备检测模块Android项目负责人，协调后端开发
 \begin{itemize}
-  \item 移动端设备检测模块Android项目负责人，实现了隧道局盾构机机况检测App，设计了\textbf{图像压缩、数据可靠传输、系统安全性保障}的方案
+  \item 实现了隧道局盾构机机况检测App，设计了\textbf{图像压缩、数据可靠传输、系统安全性保障}的方案
   \item 参与了基于SpringBoot框架的中铁隧道局管理系统后端开发，负责\textbf{用户权限管理}和\textbf{安全性校验}的设计。
   \item 负责项目部署和企业工作人员对接，此项目\textbf{已上线}应用于中铁隧道局集团有限公司日常的盾构机机况检测工作中。
   \item 涉及技术：Java、SpringBoot、Android
