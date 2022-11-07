@@ -23,7 +23,6 @@
 *.$te
 *.DVX
 *.DDF
-*.synctex.gz
 *.synctex.gz(busy)
 *.fdb_latexmk
 *.fls
